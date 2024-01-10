@@ -1,0 +1,96 @@
+
+.flex-item {
+    display: flex; 
+    justify-content:space-evenly; 
+    align-items: center;
+    box-shadow: 5px -2px 8px 5px #ccc;
+    padding: 15px 12px;
+    border-radius: 5px;
+    margin: 5px 5px;
+    text-align: left;
+    font-size: 14px;
+    width: 80%;
+    height:150px;
+    /* transition: ease-in .3s; */
+    transition: 0.3s;
+    color: black;
+    background-color: #fff;
+    /* align-items: center; */
+    font-weight: 600;
+    margin-left: 9%;
+    margin-top: 2%;
+}
+.flex-item:hover {
+  cursor: pointer;
+  transition: ease-in .3s;
+  transform: scale(1.1);
+  border-bottom: 4px solid #ff8d00;
+}
+
+.logo11{
+  width: 15px; /* Set the width of each logo */
+  height: 15px; /* Set the height of each logo */
+  border-radius: 50%; /* Create a round shape for each logo */
+  /* object-fit:cover;  */
+  /* transform: translateX(-50%); */
+  margin : 0 1%;
+  position: relative;
+  z-index: 1;
+  background-color: black;
+}
+
+.logo12 {
+  width: 15px;
+  height: 15px; /* Adjust the height to create a perfect hexagon */
+  border-width: 1px; /* Adjust the border width as needed */
+  border-style: solid;
+  border-color: transparent; /* Transparent borders to create a hexagon */
+  border-bottom-color: black; /* Set the color of the hexagon border */
+  position: relative;
+  /* margin: 3% 1%; */
+  background-color: black;
+  /* transform: rotate(45deg);  */
+  margin-right: 5%;
+}
+/* app.component.css */
+
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+li:not(:last-child)::after {
+  content: '|';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 3px; /* Adjust the height of the vertical line */
+  background-color: #000; /* Adjust the color of the vertical line */
+  margin-left: 6%;
+  margin-bottom: 3%;
+}
+
+.bar li:not(:last-child)::after {
+  content: '|';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 5px; /* Adjust the height of the vertical line */
+  background-color: #000; /* Adjust the color of the vertical line */
+  margin-left: 4%;
+  margin-bottom: 1%;
+}
+
+
+
+
+
+

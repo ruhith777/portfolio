@@ -1,0 +1,27 @@
+.flex-item {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    box-shadow: 5px -2px 8px 5px #ccc;
+    padding: 15px 14px;
+    border-radius: 5px;
+    margin: 5px 5px;
+    text-align: left;
+    font-size: 14px;
+    width: 20%;
+    height:auto;
+    /* transition: ease-in .3s; */
+    transition: 0.3s;
+    color: black;
+    background-color: #fff;
+    align-items: center;
+    font-weight: 600;
+    margin-left: 9%;
+    margin-top: 1%;
+}
+.flex-item:hover {
+  cursor: pointer;
+  transition: ease-in .3s;
+  transform: scale(1.1);
+  border-bottom: 4px solid #ff8d00;
+}

@@ -1,0 +1,71 @@
+.flex-item {
+    display:inline-flex; 
+    /* justify-content: center; 
+    align-items: center; */
+    box-shadow: 5px -2px 8px 5px #ccc;
+    /* padding: 15px 14px; */
+    border-radius: 5px;
+    /* margin: 3px 5px; */
+    text-align: center;
+    font-size: 14px;
+    width: auto;
+    height:auto;
+    /* transition: ease-in .3s; */
+    transition: 0.3s;
+    color: black;
+    background-color: #fff;
+    /* align-items: center; */
+    font-weight: 600;
+    margin-left: 7%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    
+}
+.flex-item:hover {
+  cursor: pointer;
+  transition: ease-in .3s;
+  transform: scale(1.1);
+  border-bottom: 4px solid #ff8d00;
+}
+
+.vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+  p {
+    display: inline-block;
+    margin-right: 1px; /* Adjust spacing between letters if needed */
+  }
+
+  .flex-item img {
+    width : 350px;
+    height : 350px;
+    display: block;
+    transition: opacity 0.3s ease-in-out;
+    
+  }
+  .flex-item:hover img {
+    opacity: 0.2; /* Adjust the opacity as needed */
+}
+
+.hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.flex-item:hover .hover-text {
+    opacity: 1;
+}
+
+ul li{
+  text-align: left;
+  margin-bottom: 2%;
+}
+
+
+

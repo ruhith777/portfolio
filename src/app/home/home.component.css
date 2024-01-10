@@ -1,0 +1,30 @@
+video {
+    border: 1px solid #ddd; /* Add a border around the video */
+    border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+    margin-right: 50%;
+    
+    
+  }
+
+  .round-container {
+    margin-top: 40%;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-left: 17%;
+    border: 2px solid hsl(0, 0%, 80%);
+  }
+ 
+  .round-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    margin-top: 0%;
+    margin-left: 0%;
+    overflow: hidden;
+   
+  }
+  a{
+    margin-left: 1%;
+  }

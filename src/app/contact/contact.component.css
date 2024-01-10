@@ -1,0 +1,30 @@
+.forminput {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0% 1%;
+  
+}
+
+.forminput mat-form-field {
+  width : 40%;
+}
+
+.center{
+  
+  background-color: aqua;
+  background : url(/assets/cropit-crop.jpg) no-repeat;
+  background-size: cover; 
+  width: 70%;
+  margin: 0 15%;
+}
+
+
+
+.example-button-row {
+  display: table-cell;
+  max-width: 600px;
+  margin: 8px 8px 16px 0;
+}
+

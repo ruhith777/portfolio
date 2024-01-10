@@ -1,0 +1,39 @@
+a{
+    margin-left: 1%;
+  }
+
+  footer{
+    background-color: rgb(196, 196, 238);
+    height: 150px;
+}
+.footer{
+    display: flex;
+    padding:23px 123px;
+    justify-content: space-evenly;
+}
+.footer ul{
+    list-style: none;
+}
+.footer > div{
+    width:223px;
+}
+footer .footer-rights{
+    text-align: center;
+    color: gray;
+    padding:12px 0;
+
+}
+
+.logo-container{
+    margin: 3%;
+}
+.logo{
+    width : 25px;
+    height: 25px;
+    opacity: 0.6;
+}
+
+.logo:hover{
+    opacity: 1;
+}
+
