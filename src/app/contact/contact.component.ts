@@ -44,7 +44,11 @@ export class ContactComponent {
             title: 'Form submitted successfully!',
             text: 'Thank you for your submission.',
           });
-          this.contactForm.reset();          
+          this.contactForm.reset();
+          setTimeout(() => {
+            location.reload();
+          }, 4000); 
+
         },
         (error) => {
           console.error('Form submission failed:', error);
