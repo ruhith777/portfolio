@@ -18,7 +18,7 @@ export class ScrollingService {
 //download resume.pdf
 downloadResume(): Observable<Blob> {
   debugger
-  return this.http.get('assets/ruhith.pdf', { responseType: 'blob' });
+  return this.http.get('assets/Ruhith_Resume.pdf', { responseType: 'blob' });
 }
 
 downloadthreatdoc(): Observable<Blob> {
