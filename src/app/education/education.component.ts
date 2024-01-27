@@ -17,4 +17,5 @@ export class EducationComponent {
     this.showAnimation = true;
 
   }
+    
 }

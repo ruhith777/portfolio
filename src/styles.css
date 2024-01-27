@@ -2,18 +2,74 @@
 
   /* Responsive styling */
   /* @import '@fortawesome/fontawesome-free/css/all.css'; */
+/*-----------original code from starting------ */
 
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     .menu {
       flex-direction: column; /* Stack items vertically for small screens */
-      text-align: center; /* Center text for small screens */
-    }
+      /* text-align: center; Center text for small screens */
+    /* }
   
     .menu li {
       margin: 10px 0; /* Adjust spacing for small screens */
+    /* }
+  }  */
+/*-----------ending----------*/
+
+/*------latest on 26-01-2024-----------*/
+.menu {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .menu li {
+    list-style: none;
+  }
+  
+  /* Media query for small screens */
+  @media (max-width: 767px) {
+    .menu {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .menu li {
+      margin: 10px 0;
     }
   }
+  
+  /* Media query for medium screens */
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* Adjust styles for medium-sized screens */
+    .menu {
+      /* Example: Increase spacing between menu items */
+      justify-content: space-between;
+    }
+  
+    .menu li {
+      /* Example: Change font size */
+      font-size: 1.2rem;
+    }
+  }
+  
+  /* Media query for large screens */
+  @media (min-width: 992px) {
+    /* Adjust styles for larger screens */
+    .menu {
+      /* Example: Use a horizontal layout with more spacing */
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  
+    .menu li {
+      /* Example: Reset font size to default */
+      font-size: 1rem;
+    }
+  }
+/*------latest on 26-01-2024-----------*/
 
+  
+  
   /* mac css */
   * {
     margin: 0;
