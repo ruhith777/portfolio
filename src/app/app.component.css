@@ -13,3 +13,11 @@
     /* Add any additional styles for your main content */
   }
   
+  .text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 6rem;
+
+  }
