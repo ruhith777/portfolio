@@ -1,93 +1,73 @@
 <div id="projectsarea">
-    <br><br>
-<br><br>
-<div class="headings">Projects</div>
-<div class="flex-item" style="display: inline-block;">
-    <div class="edu_left_insider">
-        <img src="assets/Projects/portfoliohome.png">
-
-    </div>
-    <div class="edu_right">
-        <div style="margin-left: 3%;font-size: 1rem;margin-top: 2%;">Angular project</div>
-        <div style="margin-left: 3%;font-size: 2rem;margin-bottom: 3%;"><b>Ruhith-Portfolio</b></div>
-
-        <div style="margin-left: 9%;">        
-        <ul>
-            <li>Developed a personal portfolio website using Angular 
-                framework to showcase skills, projects, and professional experience.</li>
-            <li>Utilized Angular for building a responsive interface 
-                and Incorporated HTML5, CSS3, and JavaScript for front-end development.</li>
-            <li>Deployed the Angular portfolio project on Vercel for seamless
-                hosting and accessibility.</li>
-            
-        </ul>
-    </div>
-        <div  style="margin-left:55%;;margin-bottom: 2%;display:inline-flex;">
-            <button class="btn"><a href="https://github.com/ruhith777" target="_blank">Website</a></button>
-            <button class="btn"><a href="https://github.com/ruhith777" target="_blank">Github</a></button>
-        </div>
-
-    </div>
-</div>
-
-<div class="flex-item" style="display: inline-block;">
-    <div class="edu_left_insider">
-        
-        <img src="assets/Projects/InsiderThreatphoto.jpg">
-        
-
-    </div>
-    <div class="edu_right">
-        <div style="margin-left: 3%;font-size: 1rem;margin-top: 2%;">Machine Learning Project</div>
-        <div style="margin-left: 3%;font-size: 1.5rem;margin-bottom: 3%;"><b>HUNTING INSIDER THREAT</b></div>
-
-        <div style="margin-left: 9%;">        
-        <ul>
-            <li>Finding malicious users in an organisation by considering a scenerio</li>
-            <li>BiLSTM with Autoencoder has used.</li>
-            <li>Dataset is taken from CERT r4.2</li>
-            <li>Mainly, Python and Jupyter platform is used and various technologies and applications has been used</li>
-        </ul>
-    </div>
-            <div style="display:inline-flex;margin-left:43%;margin-bottom: 2%;">
-                <button class="btn" (click)="documentation()">Documentation</button>
-                <button class="btn"><a href="https://drive.google.com/file/d/1dhRsuHJcpTvX2nGKKzofJCPy5nPyfM-u/view?usp=sharing" target="_blank">Video</a></button>
-
-                
+    <div class="homebody">
+        <section class="projects-section">
+            <div class="section-header">
+                <span class="text-gray">My Work</span>
+                <h1 class="section-title">Projects</h1>
             </div>
 
+            <div class="projects-container">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/Projects/portfoliohome.png" alt="Portfolio Project">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-type">Angular Project</div>
+                        <h3 class="project-title">Ruhith-Portfolio</h3>
+                        <ul class="project-description">
+                            <li>Developed a personal portfolio website using Angular framework to showcase skills, projects, and professional experience.</li>
+                            <li>Utilized Angular for building a responsive interface and incorporated HTML5, CSS3, and JavaScript for front-end development.</li>
+                            <li>Deployed the Angular portfolio project on Vercel for seamless hosting and accessibility.</li>
+                        </ul>
+                        <div class="project-buttons">
+                            <a href="https://github.com/ruhith777" target="_blank" class="project-btn">Website</a>
+                            <a href="https://github.com/ruhith777" target="_blank" class="project-btn">Github</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/Projects/InsiderThreatphoto.jpg" alt="Insider Threat Project">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-type">Machine Learning Project</div>
+                        <h3 class="project-title">Hunting Insider Threat</h3>
+                        <ul class="project-description">
+                            <li>Finding malicious users in an organisation by considering a scenario</li>
+                            <li>BiLSTM with Autoencoder has been used</li>
+                            <li>Dataset is taken from CERT r4.2</li>
+                            <li>Mainly, Python and Jupyter platform is used and various technologies and applications have been used</li>
+                        </ul>
+                        <div class="project-buttons">
+                            <button class="project-btn" (click)="documentation()">Documentation</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/Projects/spandanaindex.jpg" alt="Spandana Project">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-type">Sample Website</div>
+                        <h3 class="project-title">Spandana</h3>
+                        <ul class="project-description">
+                            <li>Developed a web application where people can ask questions and get answers from designated users.</li>
+                            <li>Front-end technologies used: HTML5, CSS3, JavaScript</li>
+                            <li>Back-end technologies used: PHP, XAMPP server</li>
+                            <li>Integrated XAMPP server for local development, managing the backend database to store user questions, answers, and related information.</li>
+                            <li>Deployed on herokuapp.com</li>
+                        </ul>
+                        <div class="project-buttons">
+                            <a href="https://github.com/ruhith777/mini-deployment" target="_blank" class="project-btn">Github</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-</div>
-
-<div class="flex-item" style="display: inline-block;">
-    <div class="edu_left_insider" style="height : 40%">
-        <img src="assets/Projects/spandanaindex.jpg">
-        
-
-    </div>
-    <div class="edu_right">
-        <div style="margin-left: 3%;font-size: 1rem;margin-top: 2%;">Sample Website</div>
-        <div style="margin-left: 3%;font-size: 2rem;margin-bottom: 3%;"><b>SPANDANA</b></div>
-
-        <div style="margin-left: 9%;">        <ul>
-            <li>Developed a web application where people can ask questions and get answers from designated users.</li>
-            <li>Front-end techologies used : HTML5,CSS3,Jaascript</li>
-            <li>Back-end technologies used : Php,Xampp server</li>
-            <li>Integrated XAMPP server for local development, managing
-                the backend database to store user questions, answers, and
-                related information.</li>
-            <li>Deployed in herokuapp.com</li>
-        </ul>
-    </div>
-    
-        <div style="display:inline-flex; margin-left:59%;margin-bottom: 2%;">
-            <button class="btn"><a href="https://drive.google.com/file/d/1YtJOKkFMkhH9p80wQQ9I0KAyHRINI5K3/view?usp=sharing" target="_blank">Video</a></button>
-            <button class="btn"><a href="https://github.com/ruhith777/mini-deployment" target="_blank">Github</a></button>
-
-            
-        </div>
-    
-
-    </div>
-</div>
 </div>

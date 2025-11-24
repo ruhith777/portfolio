@@ -1,45 +1,63 @@
-<!-- <logo> -->
-<!-- <title></title> -->
-<!-- <ullist></ullist> -->
 <div class="navbarbody">
-<header >
-    <nav>
-        <div class="left">Ruhith-Portfolio</div>
-        <div class="right">
-            <ul>
-                <li><a (click)="scrolltopHomeArea()"><mat-icon style="font-size: 20px;margin-bottom: -8px;">home</mat-icon>Home</a></li>
-                <li> <a (click)="scrolltopAboutArea()">About</a></li>
-                <li> <a (click)="scrolltopEducationArea()">Education</a></li>
-                <li><a (click)="scrolltopExperienceArea()">Experience</a>
-                    <!-- <div class="submenu">
-                        <ul>
-                            <li><a href="wwwgoogle.com">Research</a></li>
-                            <li><a href="wwwgoogle.com">Work</a></li>
-                        </ul>
-                    </div> -->
-                </li>
-                <li><a (click)="scrolltopprojectsArea()">Projects</a></li>
-                <li><a (click)="scrolltopCertificationsArea()">Certifications</a></li>
-                <li><a (click)="scrolltopSkillsArea()">Skills</a></li>
-                <li><a (click)="scrolltopContactArea()">Contact Me</a></li>
-                <li><a (click)="scrolltopmore()">More</a>
-                    <!-- <div class="submenu">
-                        <ul>
-                            <li><a (click)="scrolltopTalksArea()">Talks</a></li>
-                            <li><a (click)="scrolltopProgammingArea()">Progamming Languages</a></li>
-                            <li><a (click)="scrolltopAchievementArea()">Achievements</a></li>
-                            <li><a (click)="scrolltopHobbiesArea()">Hobbies and Intrests</a></li>
-                            <li><a (click)="scrolltopResponsibilitiesArea()">Responsibilities</a></li>
-                        </ul>
-                    </div> -->
-                
-                </li>
+    <header>
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav">
+            <div class="left">Ruhith-Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a (click)="scrolltopHomeArea()"><mat-icon style="font-size: 20px;margin-bottom: -8px;">home</mat-icon>Home</a></li>
+                    <li><a (click)="scrolltopAboutArea()">About</a></li>
+                    <li><a (click)="scrolltopEducationArea()">Education</a></li>
+                    <li><a (click)="scrolltopExperienceArea()">Experience</a></li>
+                    <li><a (click)="scrolltopprojectsArea()">Projects</a></li>
+                    <li><a (click)="scrolltopCertificationsArea()">Certifications</a></li>
+                    <li><a (click)="scrolltopSkillsArea()">Skills</a></li>
+                    <li><a (click)="scrolltopContactArea()">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
 
-            </ul>
-
-        </div>
-
-    </nav>
-</header>
+        <!-- Mobile Top Bar - Only Portfolio Name -->
+        <nav class="mobile-top-nav">
+            <div class="mobile-logo">Ruhith-Portfolio</div>
+        </nav>
+    </header>
 </div>
 
+<!-- Mobile Bottom Navigation Bar -->
+<div class="mobile-bottom-nav">
+    <div class="mobile-bottom-nav-container">
+        <a (click)="scrolltopHomeArea()" class="mobile-bottom-nav-item">
+            <mat-icon>home</mat-icon>
+            <span>Home</span>
+        </a>
+        <a (click)="scrolltopAboutArea()" class="mobile-bottom-nav-item">
+            <mat-icon>person</mat-icon>
+            <span>About</span>
+        </a>
+        <a (click)="scrolltopEducationArea()" class="mobile-bottom-nav-item">
+            <mat-icon>school</mat-icon>
+            <span>Education</span>
+        </a>
+        <a (click)="scrolltopExperienceArea()" class="mobile-bottom-nav-item">
+            <mat-icon>work</mat-icon>
+            <span>Experience</span>
+        </a>
+        <a (click)="scrolltopprojectsArea()" class="mobile-bottom-nav-item">
+            <mat-icon>folder</mat-icon>
+            <span>Projects</span>
+        </a>
+        <a (click)="scrolltopCertificationsArea()" class="mobile-bottom-nav-item">
+            <mat-icon>verified</mat-icon>
+            <span>Certificates</span>
+        </a>
+        <a (click)="scrolltopSkillsArea()" class="mobile-bottom-nav-item">
+            <mat-icon>code</mat-icon>
+            <span>Skills</span>
+        </a>
+        <a (click)="scrolltopContactArea()" class="mobile-bottom-nav-item">
+            <mat-icon>mail</mat-icon>
+            <span>Contact</span>
+        </a>
+    </div>
+</div>

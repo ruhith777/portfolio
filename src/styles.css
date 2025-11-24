@@ -94,6 +94,8 @@
     
 }
 
+/* Navigation styles moved to navbar component */
+/* Keeping for backward compatibility but will be overridden by component styles */
 nav {
     z-index: 3;
     position: fixed;
@@ -108,12 +110,9 @@ nav {
 nav ul {
     display: flex;
     justify-content: center;
-
-
 }
 
 nav ul li {
-
     list-style: none;
     margin: 0 23px;
     cursor: pointer;
@@ -126,9 +125,51 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: none;
-
-
     color: greenyellow;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+    
+    /* Add padding top to sections to account for mobile top nav (60px) */
+    #homearea,
+    #aboutarea,
+    #educationarea,
+    #experiencearea,
+    #projectsarea,
+    #certificationsarea,
+    #skillsarea,
+    #contactarea {
+        padding-top: 60px;
+    }
+    
+    /* Add padding bottom to account for mobile bottom nav */
+    #homearea,
+    #aboutarea,
+    #educationarea,
+    #experiencearea,
+    #projectsarea,
+    #certificationsarea,
+    #skillsarea,
+    #contactarea {
+        padding-bottom: 80px;
+    }
+}
+
+@media (max-width: 430px) {
+    #homearea,
+    #aboutarea,
+    #educationarea,
+    #experiencearea,
+    #projectsarea,
+    #certificationsarea,
+    #skillsarea,
+    #contactarea {
+        padding-bottom: 75px;
+    }
 }
 
 main hr {
@@ -157,7 +198,7 @@ main hr {
     margin-right: 20%;
 }
 .leftSection .buttons{
-    padding: 40px 0;
+    padding: 20px 0;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -327,5 +368,33 @@ button {
     font-size:50px;
     justify-content: center;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html {
+    scroll-behavior: smooth;
+}
+
+html, body { 
+    height: 100%; 
+    overflow-x: hidden;
+}
+
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* Mobile navigation is positioned fixed and won't affect content flow */
+/* No additional padding needed as nav is absolutely positioned */
+
+/* Add spacing between sections for desktop view */
+@media (min-width: 769px) {
+    #homearea,
+    #aboutarea,
+    #educationarea,
+    #experiencearea,
+    #projectsarea,
+    #certificationsarea,
+    #skillsarea,
+    #contactarea {
+        margin-bottom: 40px;
+    }
+}

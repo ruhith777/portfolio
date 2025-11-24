@@ -1,30 +1,249 @@
-video {
-    border: 1px solid #ddd; /* Add a border around the video */
-    border-radius: 5px; /* Optional: Add border-radius for rounded corners */
-    margin-right: 50%;
-    
-    
-  }
+/* --- SECTION CONTAINER --- */
+#homearea {
+    width: 100%;
+}
 
-  .round-container {
-    margin-top: 40%;
-    width: 150px;
-    height: 150px;
-    overflow: hidden;
+#homearea .homebody {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 40px;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Desktop: More white space */
+@media (min-width: 769px) {
+    #homearea .homebody {
+        padding: 30px 60px;
+        min-height: 90vh;
+    }
+}
+
+.home-section {
+    width: 100%;
+}
+
+/* --- HOME CONTENT --- */
+.home-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.home-left {
+    text-align: center;
+    max-width: 600px;
+}
+
+.profile-image-container {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 30px;
     border-radius: 50%;
-    margin-left: 17%;
-    border: 2px solid hsl(0, 0%, 80%);
-  }
- 
-  .round-image {
+    overflow: hidden;
+    border: 4px solid rgba(164, 97, 227, 0.5);
+    box-shadow: 0 0 30px rgba(164, 97, 227, 0.3);
+    transition: 0.3s ease;
+}
+
+.profile-image-container:hover {
+    transform: scale(1.05);
+    border-color: rgba(164, 97, 227, 0.8);
+    box-shadow: 0 0 40px rgba(164, 97, 227, 0.5);
+}
+
+.profile-image {
     width: 100%;
     height: 100%;
-    border-radius: 50%;
-    margin-top: 0%;
-    margin-left: 0%;
-    overflow: hidden;
-   
-  }
-  a{
-    margin-left: 1%;
-  }
+    object-fit: cover;
+}
+
+.home-text {
+    color: white;
+}
+
+.name-highlight {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(164, 97, 227);
+    display: block;
+    margin-bottom: 10px;
+}
+
+.role {
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 15px;
+}
+
+#element1 {
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.8);
+    display: block;
+    margin-bottom: 30px;
+    min-height: 30px;
+}
+
+.home-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 12px 30px;
+    background: rgba(164, 97, 227, 0.25);
+    border: 2px solid rgba(164, 97, 227, 0.5);
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: rgba(164, 97, 227, 0.4);
+    border-color: rgba(164, 97, 227, 0.7);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(164, 97, 227, 0.3);
+}
+
+/* --- SOCIAL LINKS --- */
+.social-links-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.social-link {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    background: rgba(164, 97, 227, 0.25);
+    border: 1px solid rgba(164, 97, 227, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    background: rgba(164, 97, 227, 0.35);
+    border-color: rgba(164, 97, 227, 0.7);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(164, 97, 227, 0.3);
+}
+
+.social-link img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    filter: brightness(1.2);
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+    #homearea .homebody {
+        padding: 20px 15px;
+        min-height: 70vh;
+    }
+
+    .profile-image-container {
+        width: 150px;
+        height: 150px;
+    }
+
+    .name-highlight {
+        font-size: 2rem;
+    }
+
+    .role {
+        font-size: 1.3rem;
+    }
+
+    #element1 {
+        font-size: 1.1rem;
+    }
+
+    .btn {
+        padding: 10px 25px;
+        font-size: 0.9rem;
+    }
+}
+
+/* iPhone 16 Pro and similar (393px - 430px) */
+@media (max-width: 430px) {
+    #homearea .homebody {
+        padding: 30px 12px;
+        min-height: 60vh;
+    }
+
+    .profile-image-container {
+        width: 130px;
+        height: 130px;
+        margin-bottom: 25px;
+    }
+
+    .name-highlight {
+        font-size: 1.75rem;
+    }
+
+    .role {
+        font-size: 1.2rem;
+    }
+
+    #element1 {
+        font-size: 1rem;
+        min-height: 25px;
+    }
+
+    .home-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .btn {
+        width: 200px;
+        padding: 12px 20px;
+    }
+
+    .social-links-container {
+        gap: 15px;
+        margin-top: 30px;
+    }
+
+    .social-link {
+        width: 45px;
+        height: 45px;
+    }
+
+    .social-link img {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media (max-width: 360px) {
+    .name-highlight {
+        font-size: 1.5rem;
+    }
+
+    .role {
+        font-size: 1.1rem;
+    }
+
+    .btn {
+        width: 180px;
+        font-size: 0.85rem;
+    }
+}
